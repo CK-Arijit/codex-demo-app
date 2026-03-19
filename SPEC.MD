@@ -455,6 +455,14 @@ CREATE INDEX note_shares_token_enabled_idx
 
 Implementation may use Next.js route handlers and/or server actions, but behavior must follow this contract.
 
+### 11.1 Data Fetching Strategy (Required)
+
+- All **read/data-loading** for page rendering must be done in **React Server Components (RSC)**.
+- Do not implement page data loading with client-side `useEffect(() => fetch(...))` patterns.
+- Client components should receive initial data via props from parent server components.
+- Server actions and/or route handlers are allowed for **mutations** (create/update/delete/share toggles), and any post-mutation UI refresh should rely on Next.js server revalidation/navigation patterns instead of client-side fetch loops.
+- Public and authenticated pages should render from server-fetched data by default, with client JavaScript focused on interactivity (e.g., editor behavior, auto-save state UI).
+
 ### Auth
 
 - sign up
