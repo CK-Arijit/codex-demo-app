@@ -12,8 +12,8 @@ export default async function NoteEditorPage({ params }: NoteEditorPageProps) {
       <header className="space-y-2">
         <h2 className="text-2xl font-semibold text-aqua-700">Note Editor</h2>
         <p className="text-sm text-slate-600">
-          Placeholder for note id <code className="rounded bg-aqua-100 px-1 py-0.5">{noteId}</code>. Ownership checks and
-          data fetch are not implemented.
+          Placeholder for note id <code className="rounded bg-aqua-100 px-1 py-0.5">{noteId}</code>.
+          Ownership checks and data fetch are not implemented.
         </p>
       </header>
 
@@ -24,10 +24,18 @@ export default async function NoteEditorPage({ params }: NoteEditorPageProps) {
       </div>
 
       <div className="grid gap-3 sm:grid-cols-2">
-        <div className="rounded-xl border border-aqua-200 p-4 text-sm text-slate-700">Share toggle/action placeholder</div>
-        <div className="rounded-xl border border-aqua-200 p-4 text-sm text-slate-700">Copy share link action placeholder</div>
-        <div className="rounded-xl border border-aqua-200 p-4 text-sm text-slate-700">Delete action placeholder</div>
-        <div className="rounded-xl border border-aqua-200 p-4 text-sm text-slate-700">Back to notes list action placeholder</div>
+        <div className="rounded-xl border border-aqua-200 p-4 text-sm text-slate-700">
+          Share toggle/action placeholder
+        </div>
+        <div className="rounded-xl border border-aqua-200 p-4 text-sm text-slate-700">
+          Copy share link action placeholder
+        </div>
+        <div className="rounded-xl border border-aqua-200 p-4 text-sm text-slate-700">
+          Delete action placeholder
+        </div>
+        <div className="rounded-xl border border-aqua-200 p-4 text-sm text-slate-700">
+          Back to notes list action placeholder
+        </div>
       </div>
     </section>
   );

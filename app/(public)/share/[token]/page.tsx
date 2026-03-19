@@ -12,7 +12,8 @@ export default async function SharedNotePage({ params }: SharedNotePageProps) {
       <header className="space-y-2">
         <h1 className="text-2xl font-semibold text-aqua-700">Shared Note</h1>
         <p className="text-sm text-slate-600">
-          Public read-only placeholder for token <code className="rounded bg-aqua-100 px-1 py-0.5">{token}</code>.
+          Public read-only placeholder for token{" "}
+          <code className="rounded bg-aqua-100 px-1 py-0.5">{token}</code>.
         </p>
       </header>
 

@@ -3,7 +3,9 @@ export default function SignInPage() {
     <section className="space-y-6">
       <header>
         <h1 className="text-2xl font-semibold text-aqua-700">Sign in</h1>
-        <p className="mt-2 text-sm text-slate-600">Placeholder page: email/password auth form will be added later.</p>
+        <p className="mt-2 text-sm text-slate-600">
+          Placeholder page: email/password auth form will be added later.
+        </p>
       </header>
 
       <div className="space-y-3 rounded-xl border border-aqua-200 bg-aqua-50 p-4">
@@ -15,7 +17,8 @@ export default function SignInPage() {
       </div>
 
       <p className="text-sm text-slate-700">
-        Link placeholder: create account at <code className="rounded bg-aqua-100 px-1 py-0.5">/sign-up</code>
+        Link placeholder: create account at{" "}
+        <code className="rounded bg-aqua-100 px-1 py-0.5">/sign-up</code>
       </p>
     </section>
   );
