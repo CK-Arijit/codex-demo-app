@@ -1,11 +1,14 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-950 px-4 text-center text-white">
-      <h1 className="text-5xl font-bold tracking-tight">Welcome to the Codex Course</h1>
-      <p className="mt-4 max-w-lg text-lg text-gray-400">
-        Learn how to build modern apps with OpenAI Codex. This demo project will guide you through
-        the essentials step by step.
-      </p>
+    <main className="mx-auto flex min-h-screen w-full max-w-4xl items-center justify-center px-6 py-20">
+      <section className="w-full rounded-2xl border border-aqua-200 bg-white p-8 shadow-sm">
+        <h1 className="text-3xl font-semibold tracking-tight text-aqua-700">TinyNotes</h1>
+        <p className="mt-3 text-sm leading-6 text-slate-700">
+          Root route scaffold only. In the real app, this route will decide whether to redirect signed-in
+          users to <code className="rounded bg-aqua-100 px-1 py-0.5">/notes</code> or show a public
+          landing/auth entry point.
+        </p>
+      </section>
     </main>
   );
 }
